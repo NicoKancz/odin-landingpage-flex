@@ -1,1 +1,1 @@
-# odin-landingpage-flex
+# Odin Landing Page Project
