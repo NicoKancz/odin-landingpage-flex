@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Roboto;
+    font-family: 'Roboto';
     src: url(assets/fonts/Roboto-Medium.ttf);
 }
 
@@ -19,23 +19,31 @@ body {
     padding: 0;
 }
 
+/* Header styling */
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: baseline;
     overflow: hidden;
     background-color: var(--dark-color);
     color: var(--light-color);
-    font-size: 20px;
+}
+
+header>h1, header>nav {
+    width: 30%;
+}
+
+header h1 {
+    font-size: 24px;
 }
 
 nav {
-    width: 30%;
+    width: 25%;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0;
 }
 
@@ -47,3 +55,72 @@ nav li a:link {
     color: var(--light-color-2);
     text-decoration: none;
 }
+
+nav li a:visited {
+    color: var(--light-color-2);
+    text-decoration: underline;
+}
+
+/* Main styling */
+/* Hero section */
+section:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: var(--dark-color);
+}
+
+section:first-child article{
+    width: 28%;
+    height: 250px;
+}
+
+section:first-child h2 {
+    margin: 0;
+}
+
+section:first-child article:first-child {
+    white-space: normal;
+    padding-right: 2%;
+}
+
+section:first-child article:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-color-2);
+    background-color: #6D747D;
+}
+
+section:first-child h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: var(--light-color);
+}
+
+section:first-child p {
+    font-size: 18px;
+    color: var(--light-color-2);
+}
+
+/* Article section */
+
+/* Cite section */
+
+/* Button styling */
+button {
+    width: 120px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFF;
+    background-color: #3882F6;
+    padding: 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer styling */
