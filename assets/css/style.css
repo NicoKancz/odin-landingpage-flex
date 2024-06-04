@@ -19,7 +19,7 @@ body {
     padding: 0;
 }
 
-/* Header styling */
+/*#region Header styling */
 header {
     display: flex;
     justify-content: center;
@@ -60,9 +60,10 @@ nav li a:visited {
     color: var(--light-color-2);
     text-decoration: underline;
 }
+/*#endregion Header styling*/
 
-/* Main styling */
-/* Hero section */
+/*#region Main styling */
+/*#region Hero section */
 section:first-child {
     display: flex;
     justify-content: center;
@@ -104,10 +105,72 @@ section:first-child p {
     font-size: 18px;
     color: var(--light-color-2);
 }
+/*#endregion*/
 
-/* Article section */
+/*#region Article section */
+section:nth-child(2) {
+    text-align: center;
+}
 
-/* Cite section */
+section:nth-child(2) h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: var(--dark-color);
+}
+
+section:nth-child(2) section {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+section:nth-child(2) article {
+    max-width: 10%;
+    height: 350px;
+}
+
+section:nth-child(2) img {
+    display: inline-block;
+    border: solid #3882F6 4px;
+    border-radius: 20px;
+    
+    width: 100%;
+    height: 50%;
+}
+
+section:nth-child(2) p {
+    margin: 0;
+    margin-top: 5%;
+    height: 50%;
+}
+/*#endregion*/
+
+/*#region Cite section */
+section:nth-child(3) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: var(--light-color-2);
+}
+
+section:nth-child(3) p:first-child {
+    font-size: 36px;
+    font-style: italic;
+    margin: 0;
+    color: var(--dark-color);
+    width: 50%;
+}
+
+section:nth-child(3) p:last-child {
+    font-size: 24px;
+    font-weight: bold;
+    width: 50%;
+    text-align: end;
+}
+
+/*#endregion*/
 
 /* Button styling */
 button {
@@ -123,4 +186,9 @@ button {
     border-radius: 8px;
 }
 
-/* Footer styling */
+/*#endregion Main styling*/
+
+/*#region Footer styling */
+
+
+/*#endregion Footer styling*/
